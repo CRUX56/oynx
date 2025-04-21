@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "title": "Welcome to the Future of AI",
+    "description": "Discover the latest advancements in artificial intelligence and how they are shaping our world.",
+    "image": "/images/hero.jpg",
+    "button": {
+      "text": "Learn More",
+      "link": "/about"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a range of AI solutions tailored to your needs.",
+    "items": [
+      {
+        "name": "AI Consulting",
+        "description": "Expert advice on AI strategy and implementation."
+      },
+      {
+        "name": "Custom AI Solutions",
+        "description": "Tailored AI applications for your business."
+      },
+      {
+        "name": "AI Training",
+        "description": "Comprehensive training programs for your team."
+      }
+    ]
+  }
+}

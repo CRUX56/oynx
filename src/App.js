@@ -10,6 +10,8 @@ import {
   Container,
   TextField,
 } from "@mui/material";
+import HeroSection from "./components/HeroSection";
+import content from "./content/content.json"; // Assuming you have a content.json file for the content
 
 const App = () => {
   return (
@@ -37,23 +39,13 @@ const App = () => {
 
       {/* Hero Section */}
 
-      <Box
-        sx={{
-          textAlign: "center",
-          py: 8,
-          backgroundColor: "#f4f4f4",
-        }}
-      >
-        <Typography variant="h2" component="h1" gutterBottom>
-          Welcome to BusinessName
-        </Typography>
-        <Typography variant="h6" component="p" gutterBottom>
-          Your Success starts here. Build your future today
-        </Typography>
-        <Button variant="contained" color="primary" size="large" sx={{ mt: 2 }}>
-          Get Started
-        </Button>
-      </Box>
+      <HeroSection
+        title={content.hero.title}
+        subtitle={content.hero.subtitle}
+        buttonText={content.hero.button.text}
+        onButtonClick={() => alert("Button Clicked!")}
+        backgroundImage={content.hero.backgroundImage}
+      ></HeroSection>
 
       {/* About Section */}
       <Container id="about" sx={{ py: 8 }}>
