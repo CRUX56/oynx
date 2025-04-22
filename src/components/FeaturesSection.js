@@ -1,9 +1,9 @@
 import React from "react";
 import { Typography, Container, Grid, Box } from "@mui/material";
 
-export default function ServicesSection({ title, description, services }) {
+export default function FeaturesSection({ title, description, features }) {
   return (
-    <Container id="services" sx={{ py: 8 }}>
+    <Container id="features" sx={{ py: 8 }}>
       <Typography variant="h4" textAlign="center" gutterBottom>
         {title}
       </Typography>
@@ -11,7 +11,7 @@ export default function ServicesSection({ title, description, services }) {
         {description}
       </Typography>
       <Grid container spacing={4}>
-        {services.map((service, index) => (
+        {features.map((feature, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Box
               sx={{
@@ -22,9 +22,9 @@ export default function ServicesSection({ title, description, services }) {
               }}
             >
               <Typography variant="h5" gutterBottom>
-                {service.name}
+                {feature.name}
               </Typography>
-              <Typography>{service.description}</Typography>
+              <Typography>{feature.description}</Typography>
             </Box>
           </Grid>
         ))}

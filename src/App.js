@@ -10,32 +10,21 @@ import {
   Container,
   TextField,
 } from "@mui/material";
+import Navbar from "./components/layout/Navbar"; // Assuming you have a Navbar component
 import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
 import content from "./content/content.json"; // Assuming you have a content.json file for the content
+import ServicesSection from "./components/ServicesSection";
+import FeaturesSection from "./components/FeaturesSection";
+import PortfolioSection from "./components/PortfolioSection"; // Assuming you have a PortfolioSection component
+import TestimonialsSection from "./components/TestimonialsSection";
+import Footer from "./components/layout/Footer";
 
 const App = () => {
   return (
     <div className="App">
       {/* Navbar */}
-      <AppBar position="static" sx={{ backgroundColor: "#333" }}>
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            BusinessName
-          </Typography>
-          <Button color="inherit" href="#home">
-            Home
-          </Button>
-          <Button color="inherit" href="#features">
-            Services
-          </Button>
-          <Button color="inherit" href="#testimonials">
-            About
-          </Button>
-          <Button color="inherit" href="#contact">
-            Contact
-          </Button>
-        </Toolbar>
-      </AppBar>
+      <Navbar />
 
       {/* Hero Section */}
 
@@ -48,263 +37,38 @@ const App = () => {
       ></HeroSection>
 
       {/* About Section */}
-      <Container id="about" sx={{ py: 8 }}>
-        <Typography variant="h4" textAlign="center" gutterBottom>
-          About Us
-        </Typography>
-        <Typography textAlign="center" paragraph>
-          We are a leading company in our industry, committed to providing the
-          best services to our clients. Our team of experts is dedicated to
-          ensuring your success.
-        </Typography>
-      </Container>
+      <AboutSection
+        title={content.about.title}
+        description={content.about.description}
+      ></AboutSection>
 
       {/* Services Section */}
-      <Container id="services" sx={{ py: 8 }}>
-        <Typography variant="h4" textAlign="center" gutterBottom>
-          Our Services
-        </Typography>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h5" gutterBottom>
-                Service One
-              </Typography>
-              <Typography>Description of service one.</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h5" gutterBottom>
-                Service Two
-              </Typography>
-              <Typography>Description of service two.</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h5" gutterBottom>
-                Service Three
-              </Typography>
-              <Typography>Description of service three.</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
+      <ServicesSection
+        title={content.services.title}
+        description={content.services.description}
+        services={content.services.items}
+      ></ServicesSection>
 
-      {/* Features Section */}
-      <Container id="features" sx={{ py: 8 }}>
-        <Typography variant="h4" textAlign="center" gutterBottom>
-          Our Features
-        </Typography>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h5" gutterBottom>
-                Feature One
-              </Typography>
-              <Typography>Description of feature one.</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h5" gutterBottom>
-                Feature Two
-              </Typography>
-              <Typography>Description of feature two.</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h5" gutterBottom>
-                Feature Three
-              </Typography>
-              <Typography>Description of feature three.</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
+      <FeaturesSection
+        title={content.features.title}
+        description={content.features.description}
+        features={content.features.items}
+      ></FeaturesSection>
 
-      {/* Portfolio Section */}
-      <Container id="portfolio" sx={{ py: 8 }}>
-        <Typography variant="h4" textAlign={"center"} gutterBottom>
-          Our Portfolio
-        </Typography>
-        <Typography textAlign="center" paragraph>
-          Check out some of our recent projects and success stories. We take
-          pride in our work and are committed to delivering the best results for
-          our clients.
-        </Typography>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Project One</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Project Two</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Project Three</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Project Four</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Project Five</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Project Six</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
+      <PortfolioSection
+        title={content.portfolio.title}
+        description={content.portfolio.description}
+        items={content.portfolio.items}
+      ></PortfolioSection>
 
       {/* Testimonials Section */}
 
       {/* Testimonials Section */}
-      <Container id="testimonials" sx={{ py: 8 }}>
-        <Typography variant="h4" textAlign="center" gutterBottom>
-          Testimonials
-        </Typography>
-        <Typography textAlign="center">
-          Hear what our clients have to say about us.
-        </Typography>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Client One</Typography>
-              <Typography>"Amazing service!"</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Client Two</Typography>
-              <Typography>"Highly recommend!"</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">Client Three</Typography>
-              <Typography>"Exceptional quality!"</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
+      <TestimonialsSection
+        title={content.testimonials.title}
+        description={content.testimonials.description}
+        testimonials={content.testimonials.reviews}
+      ></TestimonialsSection>
 
       {/* Latest News Section */}
       <Container id="news" sx={{ py: 8 }}>
@@ -388,18 +152,7 @@ const App = () => {
       </Container>
 
       {/* Footer */}
-      <Box
-        sx={{
-          textAlign: "center",
-          py: 4,
-          backgroundColor: "#333",
-          color: "white",
-        }}
-      >
-        <Typography variant="h6">Contact Us</Typography>
-        <Typography>Email: contact@businessname.com</Typography>
-        <Typography>Phone: +123 456 7890</Typography>
-      </Box>
+      <Footer />
     </div>
   );
 };
