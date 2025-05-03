@@ -1,6 +1,8 @@
 {
   "hero": {
-    "title": "Welcome to the Future of AI",
+    "title": "Welcome to Our Platform",
+    "subtitle": "Build your future with us.",
+    "buttonText": "Get Started",
     "description": "Discover the latest advancements in artificial intelligence and how they are shaping our world.",
     "image": "/images/hero.jpg",
     "button": {
@@ -14,20 +16,11 @@
   },
   "services": {
     "title": "Our Services",
-    "description": "We offer a range of AI solutions tailored to your needs.",
-    "items": [
-      {
-        "name": "AI Consulting",
-        "description": "Expert advice on AI strategy and implementation."
-      },
-      {
-        "name": "Custom AI Solutions",
-        "description": "Tailored AI applications for your business."
-      },
-      {
-        "name": "AI Training",
-        "description": "Comprehensive training programs for your team."
-      }
+    "description": "We offer a variety of services to meet your needs.",
+    "list": [
+      { "title": "Service One", "content": "Details about service one." },
+      { "title": "Service Two", "content": "Details about service two." },
+      { "title": "Service Three", "content": "Details about service three." }
     ]
   },
   "features": {
@@ -83,5 +76,26 @@
         "feedback": "Exceptional service and support."
       }
     ]
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "fields": [
+      { "label": "Name", "multiline": false },
+      { "label": "Email", "multiline": false },
+      { "label": "Message", "multiline": true, "rows": 4 }
+    ],
+    "buttonText": "Submit"
+  },
+  "footer": {
+    "logo": "BusinessName",
+    "blurb": "Welcome to BusinessName, your one-stop solution for all your needs. We are committed to delivering the best services to our customers.",
+    "navigation": [
+      { "label": "Home", "link": "#hero" },
+      { "label": "About", "link": "#about" },
+      { "label": "Services", "link": "#services" },
+      { "label": "Portfolio", "link": "#portfolio" },
+      { "label": "Contact", "link": "#contact" }
+    ],
+    "copyright": "© 2023 BusinessName. All rights reserved."
   }
 }

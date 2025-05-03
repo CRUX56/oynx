@@ -1,15 +1,5 @@
 import React from "react";
 import "./index.css";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Box,
-  Grid,
-  Container,
-  TextField,
-} from "@mui/material";
 import Navbar from "./components/layout/Navbar"; // Assuming you have a Navbar component
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
@@ -19,6 +9,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import PortfolioSection from "./components/PortfolioSection"; // Assuming you have a PortfolioSection component
 import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/layout/Footer";
+import NewsSection from "./components/NewsSection";
 
 const App = () => {
   return (
@@ -71,88 +62,15 @@ const App = () => {
       ></TestimonialsSection>
 
       {/* Latest News Section */}
-      <Container id="news" sx={{ py: 8 }}>
-        <Typography variant="h4" textAlign="center" gutterBottom>
-          Latest News
-        </Typography>
-        <Typography textAlign="center">
-          Stay updated with our latest news and updates.
-        </Typography>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">News One</Typography>
-              <Typography>Details about news one.</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">News Two</Typography>
-              <Typography>Details about news two.</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h6">News Three</Typography>
-              <Typography>Details about news three.</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-
-      {/* Contact Form Section */}
-      <Container id="contact" sx={{ py: 8 }}>
-        <Typography variant="h4" textAlign="center" gutterBottom>
-          Contact Us
-        </Typography>
-        <Box
-          component="form"
-          sx={{
-            maxWidth: "600px",
-            margin: "0 auto",
-            display: "flex",
-            flexDirection: "column",
-            gap: 2,
-          }}
-        >
-          <TextField label="Name" variant="outlined" fullWidth />
-          <TextField label="Email" variant="outlined" fullWidth />
-          <TextField
-            label="Message"
-            variant="outlined"
-            multiline
-            rows={4}
-            fullWidth
-          />
-          <Button variant="contained" color="primary" size="large">
-            Submit
-          </Button>
-        </Box>
-      </Container>
+      <NewsSection />
 
       {/* Footer */}
-      <Footer />
+      <Footer
+        logo={content.footer.logo}
+        blurb={content.footer.blurb}
+        navigation={content.footer.navigation}
+        copyright={content.footer.copyright}
+      />
     </div>
   );
 };
