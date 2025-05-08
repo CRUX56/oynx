@@ -1,5 +1,6 @@
 import React from "react";
-import { Typography, Container, Grid, Box } from "@mui/material";
+import { Container, Typography } from "@mui/material";
+import Accordion from "./ui/Accordion";
 
 export default function ServicesSection({ title, description, services }) {
   return (
@@ -10,25 +11,7 @@ export default function ServicesSection({ title, description, services }) {
       <Typography variant="body1" textAlign="center" gutterBottom>
         {description}
       </Typography>
-      <Grid container spacing={4}>
-        {services.map((service, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Box
-              sx={{
-                textAlign: "center",
-                p: 3,
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-              }}
-            >
-              <Typography variant="h5" gutterBottom>
-                {service.name}
-              </Typography>
-              <Typography>{service.description}</Typography>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
+      <Accordion items={services} />
     </Container>
   );
 }
