@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const Accordion = ({ items }) => {
+const Accordion = ({ items = [] }) => {
   return (
     <>
       {items.map((item, index) => (
