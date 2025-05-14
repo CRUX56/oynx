@@ -5,7 +5,9 @@
     "secondaryColor": "#ffffff"
   },
   "logo": {
-    "link": "/home"
+    "link": "/home",
+    "src": "onyx-logo-white.png",
+    "alt": "ONXY AI Systems"
   },
   "navigation": [
     { "label": "Home", "link": "#hero" },
