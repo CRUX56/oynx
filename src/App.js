@@ -4,6 +4,7 @@ import Navbar from "./components/layout/Navbar"; // Assuming you have a Navbar c
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import content from "./content/content.json"; // Assuming you have a content.json file for the content
+import Parallax from "./components/Parallax"; // Assuming you have a Parallax component
 import ServicesSection from "./components/ServicesSection";
 import FeaturesSection from "./components/FeaturesSection";
 import PortfolioSection from "./components/PortfolioSection"; // Assuming you have a PortfolioSection component
@@ -32,6 +33,13 @@ const App = () => {
         title={content.about.title}
         description={content.about.description}
       ></AboutSection>
+
+      {/* Parallax Section */}
+      <Parallax
+        image={content.parallax.image}
+        title={content.parallax.title}
+        height="400px"
+      ></Parallax>
 
       {/* Services Section */}
       <ServicesSection

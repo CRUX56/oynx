@@ -16,10 +16,11 @@
   },
   "services": {
     "title": "Our Services",
-    "description": "We offer a variety of services to meet your needs.",
-    "list": [
+    "description": "We offer a variety of services to meet your needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "items": [
       { "title": "Service One", "content": "Details about service one." },
       { "title": "Service Two", "content": "Details about service two." },
+      { "title": "Service Three", "content": "Details about service three." },
       { "title": "Service Three", "content": "Details about service three." }
     ]
   },
@@ -74,6 +75,20 @@
       {
         "client": "Client Three",
         "feedback": "Exceptional service and support."
+      }
+    ]
+  },
+  "parallax": {
+    "sections": [
+      {
+        "image": "/images/parallax1.jpg",
+        "title": "Innovate with Us",
+        "content": "Join us in shaping the future of technology."
+      },
+      {
+        "image": "/images/parallax2.jpg",
+        "title": "Our Vision",
+        "content": "We aim to revolutionize industries with cutting-edge solutions."
       }
     ]
   },
