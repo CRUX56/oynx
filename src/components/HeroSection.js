@@ -1,34 +1,27 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "./ui/Typography";
-import Button from "./ui/Button";
 
-export default function HeroSection({
-  title,
-  subtitle,
-  buttonText,
-  onButtonClick,
-}) {
+export default function HeroSection({ title, subtitle }) {
   return (
     <Box
       sx={{
-        textAlign: "center",
-        padding: "50px 20px",
+        width: "94vw",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+        alignItems: "flex-start",
+        padding: "50px",
         backgroundColor: "#f5f5f5",
       }}
     >
-      <Typography variant="h2" align="center">
+      <Typography variant="h2" align="left">
         {title}
       </Typography>
-      <Typography variant="h5" align="center">
+      <Typography variant="h5" align="left">
         {subtitle}
       </Typography>
-      <Button
-        text={buttonText}
-        onClick={onButtonClick}
-        variant="contained"
-        color="primary"
-      />
     </Box>
   );
 }

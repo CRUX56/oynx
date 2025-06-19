@@ -28,11 +28,11 @@ const App = () => {
         backgroundImage={content.hero.backgroundImage}
       ></HeroSection>
 
-      {/* About Section */}
-      <AboutSection
-        title={content.about.title}
-        description={content.about.description}
-      ></AboutSection>
+      <FeaturesSection
+        title={content.features.title}
+        description={content.features.description}
+        features={content.features.items}
+      ></FeaturesSection>
 
       {/* Parallax Section */}
       <Parallax
@@ -41,24 +41,24 @@ const App = () => {
         height="400px"
       ></Parallax>
 
-      {/* Services Section */}
-      <ServicesSection
-        title={content.services.title}
-        description={content.services.description}
-        services={content.services.items}
-      ></ServicesSection>
-
-      <FeaturesSection
-        title={content.features.title}
-        description={content.features.description}
-        features={content.features.items}
-      ></FeaturesSection>
+      {/* About Section */}
+      <AboutSection
+        title={content.about.title}
+        description={content.about.description}
+      ></AboutSection>
 
       <PortfolioSection
         title={content.portfolio.title}
         description={content.portfolio.description}
         items={content.portfolio.items}
       ></PortfolioSection>
+
+      {/* Services Section */}
+      <ServicesSection
+        title={content.services.title}
+        description={content.services.description}
+        services={content.services.items}
+      ></ServicesSection>
 
       {/* Testimonials Section */}
 
