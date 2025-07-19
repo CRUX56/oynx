@@ -1,23 +1,30 @@
 import React from "react";
-import { Container, Grid, Box } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import Card from "./ui/Card";
 
 export default function FeaturesSection({ features }) {
   return (
     <Box
       sx={{
-        width: "94vw",
+        width: "99vw",
         display: "flex",
         justifyContent: "left",
         padding: "0",
         alignItems: "flex-start",
-        margin: "0 auto",
+        margin: "0",
+        flexWrap: "nowrap",
       }}
     >
-      <Grid container spacing={0} sx={{ width: "100%", margin: 0 }}>
+      <Grid container spacing={0} sx={{ width: "100%", margin: 0, padding: 0 }}>
         {features.map((feature, index) => (
-          <Grid item xs={12} key={index} sx={{ padding: 0 }}>
+          <Grid
+            item
+            xs={12}
+            key={index}
+            sx={{ padding: 0, maxWidth: "33.333%" }}
+          >
             <Card
+              image={feature.image}
               title={feature.name}
               content={feature.description}
               icon={feature.icon}

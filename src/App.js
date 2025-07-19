@@ -25,7 +25,7 @@ const App = () => {
         subtitle={content.hero.subtitle}
         buttonText={content.hero.button.text}
         onButtonClick={() => alert("Button Clicked!")}
-        backgroundImage={content.hero.backgroundImage}
+        image={content.hero.image}
       ></HeroSection>
 
       <FeaturesSection
@@ -37,7 +37,8 @@ const App = () => {
       {/* Parallax Section */}
       <Parallax
         image={content.parallax.image}
-        title={content.parallax.title}
+        title={content.parallax.sections.title}
+        content={content.parallax.sections.content}
         height="400px"
       ></Parallax>
 

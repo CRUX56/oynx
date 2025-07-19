@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-export default function Parallax({ image, title, children, height = "400px" }) {
+export default function Parallax({ title, content, height = "400px" }) {
   return (
     <Box
       sx={{
         position: "relative",
         height,
-        backgroundImage: `url(${image})`,
+        backgroundColor: "#dc2f02",
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",
@@ -25,7 +25,7 @@ export default function Parallax({ image, title, children, height = "400px" }) {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backgroundColor: "rgba(0, 0, 0, 0)",
           zIndex: 1,
         }}
       />
@@ -35,7 +35,7 @@ export default function Parallax({ image, title, children, height = "400px" }) {
             {title}
           </Typography>
         )}
-        {children}
+        {content}
       </Box>
     </Box>
   );

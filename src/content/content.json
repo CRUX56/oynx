@@ -1,10 +1,10 @@
 {
   "hero": {
-    "title": "Welcome to Our Platform",
+    "title": "Welcome To OYNX",
     "subtitle": "Build your future with us.",
     "buttonText": "Get Started",
     "description": "Discover the latest advancements in artificial intelligence and how they are shaping our world.",
-    "image": "/images/hero.jpg",
+    "image": "/hero-background.jpg",
     "button": {
       "text": "Learn More",
       "link": "/about"
@@ -29,14 +29,17 @@
     "description": "Explore the unique features that set us apart.",
     "items": [
       {
+        "image": "itsiken-E2TAS4uCwzI-unsplash.jpg",
         "name": "Feature One",
         "description": "Description of feature one."
       },
       {
+        "image": "cash-macanaya-4WvYW6-HyMk-unsplash.jpg",
         "name": "Feature Two",
         "description": "Description of feature two."
       },
       {
+        "image": "diego-ph-jRm_Ato1HS8-unsplash.jpg",
         "name": "Feature Three",
         "description": "Description of feature three."
       }
