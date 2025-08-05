@@ -1,23 +1,28 @@
 import React from "react";
-import { Card as MuiCard, CardContent, Typography, Box } from "@mui/material";
+import {
+  Card as MuiCard,
+  CardContent,
+  Typography,
+  Box,
+  useTheme,
+} from "@mui/material";
 
 const Card = ({ title, content, icon: Icon, image }) => {
+  const theme = useTheme();
   return (
-    <MuiCard
-      sx={{ width: "100%", margin: "0 auto", border: "none", borderRadius: 0 }}
-    >
+    <MuiCard sx={{ ...theme.components.card }}>
       <CardContent>
         {image && (
-          <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
+          <Box sx={{ ...theme.components.card.cardContent }}>
             <img
               src={image}
               alt={title}
-              style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+              style={{ ...theme.components.card.cardContent.img }}
             />
           </Box>
         )}
         {Icon && (
-          <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
+          <Box sx={{ ...theme.components.card.cardIcon }}>
             <Icon fontSize="large" />
           </Box>
         )}

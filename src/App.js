@@ -1,5 +1,7 @@
 import React from "react";
 import "./index.css";
+import { ThemeProvider } from "@mui/material/styles";
+import onyxTheme from "./theme/onxy"; // Assuming you have the onyx theme defined in this file
 import Navbar from "./components/layout/Navbar"; // Assuming you have a Navbar component
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
@@ -14,73 +16,75 @@ import NewsSection from "./components/NewsSection";
 
 const App = () => {
   return (
-    <div className="App">
-      {/* Navbar */}
-      <Navbar />
+    <ThemeProvider theme={onyxTheme}>
+      <div className="App">
+        {/* Navbar */}
+        <Navbar />
 
-      {/* Hero Section */}
+        {/* Hero Section */}
 
-      <HeroSection
-        title={content.hero.title}
-        subtitle={content.hero.subtitle}
-        buttonText={content.hero.button.text}
-        onButtonClick={() => alert("Button Clicked!")}
-        image={content.hero.image}
-      ></HeroSection>
+        <HeroSection
+          title={content.hero.title}
+          subtitle={content.hero.subtitle}
+          buttonText={content.hero.button.text}
+          onButtonClick={() => alert("Button Clicked!")}
+          image={content.hero.image}
+        ></HeroSection>
 
-      <FeaturesSection
-        title={content.features.title}
-        description={content.features.description}
-        features={content.features.items}
-      ></FeaturesSection>
+        <FeaturesSection
+          title={content.features.title}
+          description={content.features.description}
+          features={content.features.items}
+        ></FeaturesSection>
 
-      {/* Parallax Section */}
-      <Parallax
-        image={content.parallax.image}
-        title={content.parallax.sections.title}
-        content={content.parallax.sections.content}
-        height="400px"
-      ></Parallax>
+        {/* Parallax Section */}
+        <Parallax
+          image={content.parallax.image}
+          title={content.parallax.sections.title}
+          content={content.parallax.sections.content}
+          height="400px"
+        ></Parallax>
 
-      {/* About Section */}
-      <AboutSection
-        title={content.about.title}
-        description={content.about.description}
-      ></AboutSection>
+        {/* About Section */}
+        <AboutSection
+          title={content.about.title}
+          description={content.about.description}
+        ></AboutSection>
 
-      <PortfolioSection
-        title={content.portfolio.title}
-        description={content.portfolio.description}
-        items={content.portfolio.items}
-      ></PortfolioSection>
+        <PortfolioSection
+          title={content.portfolio.title}
+          description={content.portfolio.description}
+          items={content.portfolio.items}
+        ></PortfolioSection>
 
-      {/* Services Section */}
-      <ServicesSection
-        title={content.services.title}
-        description={content.services.description}
-        services={content.services.items}
-      ></ServicesSection>
+        {/* Services Section */}
+        <ServicesSection
+          title={content.services.title}
+          description={content.services.description}
+          services={content.services.items}
+        ></ServicesSection>
 
-      {/* Testimonials Section */}
+        {/* Testimonials Section */}
 
-      {/* Testimonials Section */}
-      <TestimonialsSection
-        title={content.testimonials.title}
-        description={content.testimonials.description}
-        testimonials={content.testimonials.reviews}
-      ></TestimonialsSection>
+        {/* Testimonials Section */}
+        <TestimonialsSection
+          title={content.testimonials.title}
+          description={content.testimonials.description}
+          testimonials={content.testimonials.reviews}
+        ></TestimonialsSection>
 
-      {/* Latest News Section */}
-      <NewsSection />
+        {/* Latest News Section */}
+        <NewsSection />
 
-      {/* Footer */}
-      <Footer
-        logo={content.footer.logo}
-        blurb={content.footer.blurb}
-        navigation={content.footer.navigation}
-        copyright={content.footer.copyright}
-      />
-    </div>
+        {/* Footer */}
+        <Footer
+          logo={content.footer.logo}
+          blurb={content.footer.blurb}
+          navigation={content.footer.navigation}
+          copyright={content.footer.copyright}
+        />
+      </div>
+    </ThemeProvider>
   );
 };
 

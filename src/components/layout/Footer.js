@@ -5,45 +5,11 @@ import ContactFormSection from "../ContactFormSection";
 export default function Footer({ logo, blurb, navigation, copyright }) {
   return (
     <Box sx={{ backgroundColor: "#333", color: "white", pt: 4 }}>
-      <Grid container spacing={4} sx={{ px: 4 }}>
-        {/* Column 1: Logo and Blurb */}
-        <Grid item xs={12} md={4}>
-          <Typography variant="h6" gutterBottom>
-            {logo}
-          </Typography>
-          <Typography>{blurb}</Typography>
-        </Grid>
-
-        {/* Column 2: Navigation */}
-        <Grid item xs={12} md={4}>
-          <Typography variant="h6" gutterBottom>
-            Navigation
-          </Typography>
-          {navigation.map((item, index) => (
-            <Typography key={index}>
-              <a
-                href={item.link}
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                {item.label}
-              </a>
-            </Typography>
-          ))}
-        </Grid>
-
-        {/* Column 3: Contact Form */}
-        <Grid item xs={12} md={4}>
-          <Typography variant="h6" gutterBottom>
-            Contact Us
-          </Typography>
-          <ContactFormSection
-            title="Get in Touch"
-            fields={[
-              { label: "Email", multiline: false },
-              { label: "Message", multiline: true, rows: 3 },
-            ]}
-            buttonText="Submit"
-          />
+      <Grid container spacing={4} sx={{ px: 12 }}>
+        <Grid item xs={12} md={12} lg={12}>
+          <Box sx={{ textAlign: "center", mb: 2 }}>
+            <span>Onxy®</span>
+          </Box>
         </Grid>
       </Grid>
 
