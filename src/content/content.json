@@ -29,17 +29,17 @@
     "description": "Explore the unique features that set us apart.",
     "items": [
       {
-        "image": "itsiken-E2TAS4uCwzI-unsplash.jpg",
+        "image": "portfolio-1.jpg",
         "name": "Feature One",
         "description": "Description of feature one."
       },
       {
-        "image": "cash-macanaya-4WvYW6-HyMk-unsplash.jpg",
+        "image": "portfolio-2.jpg",
         "name": "Feature Two",
         "description": "Description of feature two."
       },
       {
-        "image": "diego-ph-jRm_Ato1HS8-unsplash.jpg",
+        "image": "portfolio-3.jpg",
         "name": "Feature Three",
         "description": "Description of feature three."
       }
@@ -105,8 +105,8 @@
     "buttonText": "Submit"
   },
   "footer": {
-    "logo": "BusinessName",
-    "blurb": "Welcome to BusinessName, your one-stop solution for all your needs. We are committed to delivering the best services to our customers.",
+    "logo": "Onxy® Studios",
+    "blurb": "Whether you’re building a brand, designing a product, or simply want to explore an idea, we’d love to hear from you.",
     "navigation": [
       { "label": "Home", "link": "#hero" },
       { "label": "About", "link": "#about" },
@@ -114,6 +114,6 @@
       { "label": "Portfolio", "link": "#portfolio" },
       { "label": "Contact", "link": "#contact" }
     ],
-    "copyright": "© 2023 BusinessName. All rights reserved."
+    "copyright": "© 2025 theCRUXCREATIVE. All rights reserved."
   }
 }
