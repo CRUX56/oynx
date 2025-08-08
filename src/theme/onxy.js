@@ -1,6 +1,15 @@
 import { createTheme } from "@mui/material/styles";
 
 const onyxTheme = createTheme({
+  generalLayout: {
+    TextAlign: ["center", "left", "right"],
+    alignItems: ["center", "flex-start", "flex-end"],
+    sectionPadding: {
+      pt: 10,
+      pb: 4,
+      mb: 2,
+    },
+  },
   palette: {
     primary: {
       main: "#212121",
@@ -121,9 +130,20 @@ const onyxTheme = createTheme({
       padding: "20px 0",
     },
     footer: {
-      padding: "20px 0",
-      backgroundColor: "#212121",
+      px: 12,
+      pt: 10,
+      pb: 4,
+      mb: 2,
+      backgroundColor: "#121212",
       color: "#FFFFFF",
+      displayLogo: {
+        fontSize: "278.41px",
+        fontWeight: "600",
+        textTransform: "Capitalize",
+        letterSpacing: "-0.08em",
+        lineHeight: "0.9em",
+        fontFamily: "Inter, sans-serif",
+      },
     },
   },
 });

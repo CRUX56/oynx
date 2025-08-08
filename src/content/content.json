@@ -105,8 +105,9 @@
     "buttonText": "Submit"
   },
   "footer": {
-    "logo": "Onxy® Studios",
+    "logo": "Onyx® Studios",
     "blurb": "Whether you’re building a brand, designing a product, or simply want to explore an idea, we’d love to hear from you.",
+    "email": "hello@onyx.com",
     "navigation": [
       { "label": "Home", "link": "#hero" },
       { "label": "About", "link": "#about" },

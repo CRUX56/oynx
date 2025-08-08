@@ -80,6 +80,7 @@ const App = () => {
         <Footer
           logo={content.footer.logo}
           blurb={content.footer.blurb}
+          email={content.footer.email}
           navigation={content.footer.navigation}
           copyright={content.footer.copyright}
         />
