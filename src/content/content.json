@@ -51,15 +51,135 @@
     "items": [
       {
         "name": "Feature One",
-        "description": "Description of feature one."
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       },
       {
-        "name": "Feature Two",
-        "description": "Description of feature two."
+        "name": "Feature 2",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       },
       {
-        "name": "Feature Three",
-        "description": "Description of feature three."
+        "name": "Feature 3",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
+      },
+      {
+        "name": "Feature 4",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
+      },
+      {
+        "name": "Feature 5",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
+      },
+      {
+        "name": "Feature 6",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       }
     ]
   },

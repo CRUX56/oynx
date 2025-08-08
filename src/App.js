@@ -7,12 +7,9 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import content from "./content/content.json"; // Assuming you have a content.json file for the content
 import Parallax from "./components/Parallax"; // Assuming you have a Parallax component
-import ServicesSection from "./components/ServicesSection";
 import FeaturesSection from "./components/FeaturesSection";
-import PortfolioSection from "./components/PortfolioSection"; // Assuming you have a PortfolioSection component
-import TestimonialsSection from "./components/TestimonialsSection";
+import PortfolioSection from "./components/PortfolioSection"; // Assuming you have a PortfolioSection component;
 import Footer from "./components/layout/Footer";
-import NewsSection from "./components/NewsSection";
 
 const App = () => {
   return (
@@ -45,36 +42,17 @@ const App = () => {
           height="400px"
         ></Parallax>
 
-        {/* About Section */}
-        <AboutSection
-          title={content.about.title}
-          description={content.about.description}
-        ></AboutSection>
-
         <PortfolioSection
           title={content.portfolio.title}
           description={content.portfolio.description}
           items={content.portfolio.items}
         ></PortfolioSection>
 
-        {/* Services Section */}
-        <ServicesSection
-          title={content.services.title}
-          description={content.services.description}
-          services={content.services.items}
-        ></ServicesSection>
-
-        {/* Testimonials Section */}
-
-        {/* Testimonials Section */}
-        <TestimonialsSection
-          title={content.testimonials.title}
-          description={content.testimonials.description}
-          testimonials={content.testimonials.reviews}
-        ></TestimonialsSection>
-
-        {/* Latest News Section */}
-        <NewsSection />
+        {/* About Section */}
+        <AboutSection
+          title={content.about.title}
+          description={content.about.description}
+        ></AboutSection>
 
         {/* Footer */}
         <Footer

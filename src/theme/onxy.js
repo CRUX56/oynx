@@ -20,7 +20,7 @@ const onyxTheme = createTheme({
       main: "#757575",
     },
     background: {
-      default: "#121212",
+      default: "#f0f0f0ff",
       paper: "#1E1E1E",
     },
     text: {

@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import content from "../content/content.json";
-import { Container, Box, Grid } from "@mui/material";
+import Card from "./ui/Card";
+import {
+  Container,
+  Box,
+  Grid,
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  IconButton,
+} from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
-const PortfolioSection = ({ items }) => {
+const PortfolioSection = () => {
   const { title, description } = content.services;
+  const items = content.portfolio?.items || [];
+  const [selectedItem, setSelectedItem] = useState(null);
 
   return (
     <Container className="portfolio-section">
@@ -13,17 +25,47 @@ const PortfolioSection = ({ items }) => {
       </Box>
       <Grid container spacing={4}>
         {items.map((item, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Box
-              className="portfolio-item"
-              sx={{ padding: 2, border: "1px solid #ccc", borderRadius: 2 }}
-            >
-              <h3>{item.name}</h3>
-              <p>{item.description}</p>
-            </Box>
+          <Grid item xs={12} sm={6} md={3} key={index}>
+            <Card
+              title={item.name}
+              content={item.description}
+              image={item.image}
+              icon={item.icon}
+              onClick={() => setSelectedItem(item)}
+              sx={{ cursor: "pointer" }}
+            />
           </Grid>
         ))}
       </Grid>
+      <Dialog
+        open={!!selectedItem}
+        onClose={() => setSelectedItem(null)}
+        fullWidth
+        maxWidth="md"
+        PaperProps={{ sx: { height: "50vh", overflowY: "auto" } }}
+      >
+        <DialogTitle>
+          {selectedItem?.name}
+          <IconButton
+            aria-label="close"
+            onClick={() => setSelectedItem(null)}
+            sx={{ position: "absolute", right: 8, top: 8 }}
+          >
+            <CloseIcon />
+          </IconButton>
+        </DialogTitle>
+        <DialogContent>
+          {selectedItem?.image && (
+            <img
+              src={selectedItem.image}
+              alt={selectedItem.name}
+              style={{ width: "100%", marginBottom: 16 }}
+            />
+          )}
+          <p>{selectedItem?.description}</p>
+          {/* Add more images/content here if needed */}
+        </DialogContent>
+      </Dialog>
     </Container>
   );
 };
