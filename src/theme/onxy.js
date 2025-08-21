@@ -14,7 +14,7 @@ const onyxTheme = createTheme({
     primary: {
       main: "#212121",
       contrastText: "#FFFFFF",
-      accent: "#FF5722",
+      accent: "#F41C07",
     },
     secondary: {
       main: "#757575",
@@ -24,8 +24,9 @@ const onyxTheme = createTheme({
       paper: "#1E1E1E",
     },
     text: {
+      highlight: "#F41C07",
       primary: "#E0E0E0",
-      dark: "#000000",
+      dark: "#1e1e1e",
       secondary: "#B0BEC5",
       disabled: "#9E9E9E",
       warn: "#ff2222ff",
@@ -33,16 +34,19 @@ const onyxTheme = createTheme({
   },
   typography: {
     fontFamily: '"Inter", "Inter Placeholder", "Arial", sans-serif',
+    fontWeightBold: 700,
     h1: {
-      fontWeight: 500,
-      fontSize: "210px",
+      fontSize: "248px",
+      fontWeight: "800",
       lineHeight: 1.235,
       letterSpacing: "-0.07em",
       textTransform: "Capitalize",
     },
     h2: {
-      fontWeight: 500,
-      fontSize: "1.5rem",
+      fontSize: "40px",
+      fontWeight: "400",
+      fontFamily: "Inter, sans-serif",
+      textTransform: "lowercase",
       lineHeight: 1.334,
     },
     h3: {
@@ -51,8 +55,8 @@ const onyxTheme = createTheme({
       lineHeight: 1.6,
     },
     h4: {
-      fontWeight: 500,
-      fontSize: "1.125rem",
+      fontWeight: 700,
+      fontSize: "36px",
       lineHeight: 1.6,
     },
     h5: {
@@ -107,6 +111,7 @@ const onyxTheme = createTheme({
       color: "#fff",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
+      subHeading: {},
     },
     features: {
       padding: "20px 0",

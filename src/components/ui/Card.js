@@ -32,14 +32,24 @@ const Card = ({ title, content, icon: Icon, image, onClick }) => {
           </Box>
         )}
         <Typography
-          variant="h5"
+          variant="h4"
           component="div"
           gutterBottom
-          color="theme?.palette?.text?.dark"
+          sx={{
+            textAlign: theme?.generalLayout?.TextAlign[0],
+            color: theme?.palette?.text?.highlight,
+          }}
         >
           {title}
         </Typography>
-        <Typography variant="body2" color="theme?.palette?.text?.dark">
+        <Typography
+          variant="body2"
+          sx={{
+            textAlign: theme?.generalLayout?.TextAlign[0],
+            color: theme?.palette?.text?.dark,
+            fontWeight: theme?.typography?.fontWeightBold,
+          }}
+        >
           {content}
         </Typography>
       </CardContent>
