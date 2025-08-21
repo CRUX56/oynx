@@ -7,7 +7,7 @@ import {
   useTheme,
 } from "@mui/material";
 
-const Card = ({ title, content, icon: Icon, image }) => {
+const Card = ({ title, content, icon: Icon, image, onClick }) => {
   const theme = useTheme();
   return (
     <MuiCard

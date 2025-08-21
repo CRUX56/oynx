@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import { ThemeProvider } from "@mui/material/styles";
 import onyxTheme from "./theme/onxy"; // Assuming you have the onyx theme defined in this file
+import Config from "./content/config.json"; // Assuming you have a config file for the application
 import Navbar from "./components/layout/Navbar"; // Assuming you have a Navbar component
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
@@ -16,7 +17,11 @@ const App = () => {
     <ThemeProvider theme={onyxTheme}>
       <div className="App">
         {/* Navbar */}
-        <Navbar />
+        <Navbar
+          options={Config}
+          logo={Config.logo.src}
+          navigation={Config.navigation}
+        />
 
         {/* Hero Section */}
 

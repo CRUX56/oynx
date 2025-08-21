@@ -25,14 +25,14 @@ const PortfolioSection = () => {
       </Box>
       <Grid container spacing={4}>
         {items.map((item, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
+          <Grid item xs={12} sm={12} md={12} key={index}>
             <Card
               title={item.name}
               content={item.description}
               image={item.image}
               icon={item.icon}
               onClick={() => setSelectedItem(item)}
-              sx={{ cursor: "pointer" }}
+              sx={{ cursor: "pointer", width: "48.333%" }}
             />
           </Grid>
         ))}

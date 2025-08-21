@@ -6,13 +6,15 @@
   },
   "logo": {
     "link": "/home",
-    "src": "onyx-logo-white.png",
-    "alt": "ONXY AI Systems"
+    "src": "Onyx Studios.png",
+    "alt": "ONXY Studios",
+    "width": "187px",
+    "height": "auto"
   },
   "navigation": [
     { "label": "Home", "link": "#hero" },
-    { "label": "About", "link": "#about" },
-    { "label": "Services", "link": "#services" },
+    { "label": "Featured", "link": "#featured" },
+    { "label": "About", "link": "#services" },
     { "label": "Portfolio", "link": "#portfolio" },
     { "label": "Contact", "link": "#contact" }
   ]
