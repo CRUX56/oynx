@@ -111,13 +111,26 @@ const onyxTheme = createTheme({
       color: "#fff",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      subHeading: {},
     },
     features: {
       padding: "20px 0",
     },
     parallax: {
-      height: "400px",
+      position: "relative",
+      display: "flex",
+      alignItems: "right",
+      justifyContent: "right",
+      color: "#fff",
+      p: 4,
+      minHeight: "381px",
+      backgroundColor: "#e10101",
+      parallaxTitle: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+      },
     },
     about: {
       padding: "20px 0",

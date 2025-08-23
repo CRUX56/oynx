@@ -35,13 +35,13 @@
       },
       {
         "image": "portfolio-2.jpg",
-        "name": "Feature Two",
-        "description": "Description of feature two."
+        "name": "PlayStation VaporWare",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia."
       },
       {
         "image": "portfolio-3.jpg",
-        "name": "Feature Three",
-        "description": "Description of feature three."
+        "name": "e36 M3 BMW Study",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia."
       }
     ]
   },

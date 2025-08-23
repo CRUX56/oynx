@@ -1,32 +1,17 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 
 export default function Parallax({ title, content, height = "400px" }) {
+  const theme = useTheme();
   return (
     <Box
       sx={{
-        position: "relative",
-        height,
-        backgroundColor: "#dc2f02",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "white",
-        textAlign: "center",
-        p: 4,
+        ...theme?.components?.parallax,
       }}
     >
       <Box
         sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0)",
-          zIndex: 1,
+          ...theme?.components?.parallax?.parallaxTitle,
         }}
       />
       <Box sx={{ position: "relative", zIndex: 2 }}>

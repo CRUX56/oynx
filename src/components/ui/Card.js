@@ -6,6 +6,7 @@ import {
   Box,
   useTheme,
 } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
 
 const Card = ({ title, content, icon: Icon, image, onClick }) => {
   const theme = useTheme();
@@ -48,9 +49,14 @@ const Card = ({ title, content, icon: Icon, image, onClick }) => {
             textAlign: theme?.generalLayout?.TextAlign[0],
             color: theme?.palette?.text?.dark,
             fontWeight: theme?.typography?.fontWeightBold,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: 1,
           }}
         >
           {content}
+          <AddIcon sx={{ fontSize: 20, marginLeft: 1 }} />
         </Typography>
       </CardContent>
     </MuiCard>
