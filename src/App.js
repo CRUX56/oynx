@@ -7,7 +7,7 @@ import Navbar from "./components/layout/Navbar"; // Assuming you have a Navbar c
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import content from "./content/content.json"; // Assuming you have a content.json file for the content
-import Parallax from "./components/Parallax"; // Assuming you have a Parallax component
+import FullWidth from "./components/ui/FullWidthSection"; // Assuming you have a Parallax component
 import FeaturesSection from "./components/FeaturesSection";
 import PortfolioSection from "./components/PortfolioSection"; // Assuming you have a PortfolioSection component;
 import Footer from "./components/layout/Footer";
@@ -40,24 +40,19 @@ const App = () => {
         ></FeaturesSection>
 
         {/* Parallax Section */}
-        <Parallax
-          image={content.parallax.image}
-          title={content.parallax.sections.title}
-          content={content.parallax.sections.content}
-          height="400px"
-        ></Parallax>
-
-        <PortfolioSection
-          title={content.portfolio.title}
-          description={content.portfolio.description}
-          items={content.portfolio.items}
-        ></PortfolioSection>
+        <FullWidth title={content.fullWidth.title}></FullWidth>
 
         {/* About Section */}
         <AboutSection
           title={content.about.title}
           description={content.about.description}
         ></AboutSection>
+
+        <PortfolioSection
+          title={content.portfolio.title}
+          description={content.portfolio.description}
+          items={content.portfolio.items}
+        ></PortfolioSection>
 
         {/* Footer */}
         <Footer

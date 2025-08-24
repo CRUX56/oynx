@@ -56,7 +56,9 @@ const Card = ({ title, content, icon: Icon, image, onClick }) => {
           }}
         >
           {content}
-          <AddIcon sx={{ fontSize: 20, marginLeft: 1 }} />
+          <button>
+            <AddIcon sx={{ fontSize: 20, marginLeft: 1 }} />
+          </button>
         </Typography>
       </CardContent>
     </MuiCard>

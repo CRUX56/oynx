@@ -132,6 +132,21 @@ const onyxTheme = createTheme({
         height: "100%",
       },
     },
+    fullWidth: {
+      padding: "20px 20px 0",
+      backgroundColor: "#e10101",
+      color: "#FFFFFF",
+      textAlign: "right",
+      minHeight: "381px",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "end",
+      fullWidthTitle: {
+        textTransform: "lowercase",
+        fontSize: "78px",
+        fontWeight: "700",
+      },
+    },
     about: {
       padding: "20px 0",
     },
