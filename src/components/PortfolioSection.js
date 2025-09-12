@@ -42,7 +42,15 @@ const PortfolioSection = () => {
         onClose={() => setSelectedItem(null)}
         fullWidth
         maxWidth="md"
-        PaperProps={{ sx: { height: "50vh", overflowY: "auto" } }}
+        PaperProps={{
+          sx: {
+            height: "100vh",
+            overflowY: "auto",
+            margin: 0,
+            backgroundColor: "#ffff",
+            justifyContent: "flex-end",
+          },
+        }}
       >
         <DialogTitle>
           {selectedItem?.name}

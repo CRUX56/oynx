@@ -1,8 +1,20 @@
-import React from "react";
-import { Grid, Box } from "@mui/material";
+import React, { useState } from "react";
+import content from "../content/content.json";
+import {
+  Grid,
+  Box,
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  IconButton,
+} from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 import Card from "./ui/Card";
 
 export default function FeaturesSection({ features }) {
+  const item = content.portfolio?.items || [];
+  const [selectedItem, setSelectedItem] = useState(null);
+
   return (
     <Box
       sx={{
@@ -29,37 +41,39 @@ export default function FeaturesSection({ features }) {
               content={feature.description}
               icon={feature.icon}
               sx={{ width: "100%" }}
+              onClick={() => setSelectedItem(item)}
             />
           </Grid>
         ))}
       </Grid>
+      <Dialog
+        open={!!selectedItem}
+        onClose={() => setSelectedItem(null)}
+        fullWidth
+        maxWidth="lg"
+        PaperProps={{ sx: { height: "50vh", overflowY: "auto" } }}
+      >
+        <DialogTitle>
+          {selectedItem?.name}
+          <IconButton
+            aria-label="close"
+            onClick={() => setSelectedItem(null)}
+            sx={{ position: "absolute", right: 8, top: 8 }}
+          >
+            <CloseIcon />
+          </IconButton>
+        </DialogTitle>
+        <DialogContent>
+          {selectedItem?.image && (
+            <img
+              src={selectedItem.image}
+              alt={selectedItem.name}
+              style={{ width: "100%", marginBottom: 16 }}
+            />
+          )}
+          <p>{selectedItem?.description}</p>
+        </DialogContent>
+      </Dialog>
     </Box>
-
-    /*
-    <Container
-      id="features"
-      sx={{
-        py: 8,
-        px: 0,
-        padding: 0,
-        display: "flex",
-        alignItems: "flex-start",
-      }}
-    >
-      <Grid container spacing={0} sx={{ width: "100%", margin: 0 }}>
-        {features.map((feature, index) => (
-          <Grid item xs={12} key={index} sx={{ padding: 0 }}>
-            <Card
-              title={feature.name}
-              content={feature.description}
-              icon={feature.icon}
-              sx={{ width: "100%" }}
-            />
-          </Grid>
-        ))}
-      </Grid>
-      
-    </Container>
-    */
   );
 }

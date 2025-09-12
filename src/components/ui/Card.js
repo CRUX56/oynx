@@ -10,12 +10,23 @@ import AddIcon from "@mui/icons-material/Add";
 
 const Card = ({ title, content, icon: Icon, image, onClick }) => {
   const theme = useTheme();
+  // No changes needed here; the openPortfolioPopup function already calls onClick,
+  // which is passed from PortfolioSection.js and sets the selected item.
+  const openPortfolioPopup = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <MuiCard
       sx={{
         ...theme?.components?.card,
         backgroundColor: theme?.palette?.background?.default,
       }}
+      onClick={onClick}
+      tabIndex={0}
+      role="button"
     >
       <CardContent>
         {image && (
@@ -56,9 +67,8 @@ const Card = ({ title, content, icon: Icon, image, onClick }) => {
           }}
         >
           {content}
-          <button>
-            <AddIcon sx={{ fontSize: 20, marginLeft: 1 }} />
-          </button>
+
+          <AddIcon sx={{ fontSize: 20, marginLeft: 1 }} />
         </Typography>
       </CardContent>
     </MuiCard>
