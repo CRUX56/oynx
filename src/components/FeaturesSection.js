@@ -1,15 +1,8 @@
 import React, { useState } from "react";
 import content from "../content/content.json";
-import {
-  Grid,
-  Box,
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  IconButton,
-} from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { Grid, Box } from "@mui/material";
 import Card from "./ui/Card";
+import ReusableDialog from "./ui/ReusableDialog";
 
 export default function FeaturesSection({ features }) {
   const item = content.portfolio?.items || [];
@@ -41,39 +34,18 @@ export default function FeaturesSection({ features }) {
               content={feature.description}
               icon={feature.icon}
               sx={{ width: "100%" }}
-              onClick={() => setSelectedItem(item)}
+              onClick={() => setSelectedItem(feature)}
             />
           </Grid>
         ))}
       </Grid>
-      <Dialog
+      <ReusableDialog
         open={!!selectedItem}
         onClose={() => setSelectedItem(null)}
-        fullWidth
-        maxWidth="lg"
-        PaperProps={{ sx: { height: "50vh", overflowY: "auto" } }}
-      >
-        <DialogTitle>
-          {selectedItem?.name}
-          <IconButton
-            aria-label="close"
-            onClick={() => setSelectedItem(null)}
-            sx={{ position: "absolute", right: 8, top: 8 }}
-          >
-            <CloseIcon />
-          </IconButton>
-        </DialogTitle>
-        <DialogContent>
-          {selectedItem?.image && (
-            <img
-              src={selectedItem.image}
-              alt={selectedItem.name}
-              style={{ width: "100%", marginBottom: 16 }}
-            />
-          )}
-          <p>{selectedItem?.description}</p>
-        </DialogContent>
-      </Dialog>
+        title={selectedItem?.name}
+        content={selectedItem?.content}
+        image={selectedItem?.image}
+      />
     </Box>
   );
 }

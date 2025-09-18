@@ -1,16 +1,8 @@
 import React, { useState } from "react";
 import content from "../content/content.json";
 import Card from "./ui/Card";
-import {
-  Container,
-  Box,
-  Grid,
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  IconButton,
-} from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { Container, Box, Grid } from "@mui/material";
+import ReusableDialog from "./ui/ReusableDialog";
 
 const PortfolioSection = () => {
   const { title, description } = content.services;
@@ -37,43 +29,13 @@ const PortfolioSection = () => {
           </Grid>
         ))}
       </Grid>
-      <Dialog
+      <ReusableDialog
         open={!!selectedItem}
         onClose={() => setSelectedItem(null)}
-        fullWidth
-        maxWidth="md"
-        PaperProps={{
-          sx: {
-            height: "100vh",
-            overflowY: "auto",
-            margin: 0,
-            backgroundColor: "#ffff",
-            justifyContent: "flex-end",
-          },
-        }}
-      >
-        <DialogTitle>
-          {selectedItem?.name}
-          <IconButton
-            aria-label="close"
-            onClick={() => setSelectedItem(null)}
-            sx={{ position: "absolute", right: 8, top: 8 }}
-          >
-            <CloseIcon />
-          </IconButton>
-        </DialogTitle>
-        <DialogContent>
-          {selectedItem?.image && (
-            <img
-              src={selectedItem.image}
-              alt={selectedItem.name}
-              style={{ width: "100%", marginBottom: 16 }}
-            />
-          )}
-          <p>{selectedItem?.description}</p>
-          {/* Add more images/content here if needed */}
-        </DialogContent>
-      </Dialog>
+        title={selectedItem?.name}
+        content={selectedItem?.description}
+        image={selectedItem?.image}
+      />
     </Container>
   );
 };
