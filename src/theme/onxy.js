@@ -178,6 +178,17 @@ const onyxTheme = createTheme({
     },
     about: {
       padding: "20px 0",
+      heading: {
+        fontSize: "128px",
+        fontWeight: "bold",
+        textTransform: "lowercase",
+        lineHeight: 109,
+      },
+      content: {
+        fontSize: "32px",
+        fontWeight: "300",
+        lineHeight: 1.5,
+      },
     },
     portfolio: {
       padding: "20px 0",

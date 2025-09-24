@@ -9,7 +9,6 @@ import AboutSection from "./components/AboutSection";
 import content from "./content/content.json"; // Assuming you have a content.json file for the content
 import FullWidth from "./components/ui/FullWidthSection"; // Assuming you have a Parallax component
 import FeaturesSection from "./components/FeaturesSection";
-import PortfolioSection from "./components/PortfolioSection"; // Assuming you have a PortfolioSection component;
 import Footer from "./components/layout/Footer";
 
 const App = () => {
@@ -48,11 +47,14 @@ const App = () => {
           description={content.about.description}
         ></AboutSection>
 
-        <PortfolioSection
-          title={content.portfolio.title}
-          description={content.portfolio.description}
-          items={content.portfolio.items}
-        ></PortfolioSection>
+        <FeaturesSection
+          title={content.selectedWorks.title}
+          description={content.selectedWorks.description}
+          features={content.selectedWorks.items}
+        ></FeaturesSection>
+
+        {/* Parallax Section */}
+        <FullWidth title={content.footerCTA.title}></FullWidth>
 
         {/* Footer */}
         <Footer
