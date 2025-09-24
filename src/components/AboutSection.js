@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Grid, useTheme, Box } from "@mui/material";
+import { Container, Typography, Box, useTheme } from "@mui/material";
 import content from "../content/content.json";
 
 export default function AboutSection() {
@@ -10,64 +10,70 @@ export default function AboutSection() {
     <Container
       id="about"
       sx={{
-        py: 12,
+        pt: "80px",
+        pb: "80px",
         ...theme?.sections?.about,
-        position: "relative",
-        minHeight: "100vh",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        justifyContent: "left",
+        minHeight: "unset",
       }}
     >
       <Box
         sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: 0,
+          width: { xs: "100%", sm: "90%" },
+          maxWidth: "1500px",
+          margin: "160px auto",
+          textAlign: "left",
         }}
       >
-        <img
-          src={image}
-          alt={title}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            objectPosition: "center",
-            display: "block",
+        <Typography
+          variant="h2"
+          component="h2"
+          gutterBottom
+          sx={{
+            fontSize: { xs: "36px", sm: "48px", md: "64px", lg: "128px" },
+            color: theme?.palette?.background?.paper,
+            lineHeight: 0.8,
+            fontWeight: 700,
+            mb: 2,
           }}
-        />
+        >
+          {title}
+        </Typography>
+        <Typography
+          variant="body1"
+          component="p"
+          sx={{ mb: 4, maxWidth: "600px", width: { xs: "100%", sm: "75%" } }}
+        >
+          {description}
+        </Typography>
+        <Box
+          sx={{
+            width: "100%",
+            height: { xs: "250px", sm: "350px", md: "450px" },
+            overflow: "hidden",
+            borderRadius: 2,
+            boxShadow: 2,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <img
+            src={image}
+            alt={title}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "center",
+              display: "block",
+            }}
+          />
+        </Box>
       </Box>
-      <Grid
-        container
-        spacing={4}
-        alignItems="center"
-        flexDirection={{ xs: "column", md: "row" }}
-        sx={{ position: "relative", zIndex: 1 }}
-      >
-        <Grid item xs={12} md={3} lg={3}>
-          <Typography
-            variant="h2"
-            component="h2"
-            gutterBottom
-            sx={{ color: "#fff", textShadow: "0 2px 8px rgba(0,0,0,0.7)" }}
-          >
-            {title}
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={8} lg={8}>
-          <Typography
-            variant="body1"
-            component="p"
-            sx={{ color: "#fff", textShadow: "0 2px 8px rgba(0,0,0,0.7)" }}
-          >
-            {description}
-          </Typography>
-        </Grid>
-      </Grid>
     </Container>
   );
 }
