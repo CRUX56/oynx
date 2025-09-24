@@ -27,6 +27,7 @@ const onyxTheme = createTheme({
       highlight: "#F41C07",
       primary: "#E0E0E0",
       dark: "#1e1e1e",
+      darkGray: "#474646",
       secondary: "#B0BEC5",
       disabled: "#9E9E9E",
       warn: "#ff2222ff",
@@ -94,6 +95,34 @@ const onyxTheme = createTheme({
           justifyContent: "center",
           mb: 2,
           fontSize: "large",
+        },
+      },
+    },
+    portfolioDialog: {
+      dialogHeader: {
+        fontSize: "28px",
+        fontWeight: "700",
+        projectTitle: {
+          textTransform: "lowercase",
+        },
+        projectDetails: {
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "baseline",
+          columnGap: "10px",
+          fontSize: "36px",
+          fontWeight: "400",
+          projectContent: {
+            fontWeight: "300",
+            fontSize: "24px",
+            lineHeight: 1.5,
+          },
+        },
+        projectImages: {
+          borderRadius: "8px",
+          maxWidth: "100%",
+          height: "auto",
+          marginBottom: "16px",
         },
       },
     },

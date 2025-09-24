@@ -33,6 +33,9 @@ const PortfolioSection = () => {
         open={!!selectedItem}
         onClose={() => setSelectedItem(null)}
         title={selectedItem?.name}
+        client={selectedItem?.client}
+        category={selectedItem?.category}
+        synopsis={selectedItem?.synopsis}
         content={selectedItem?.description}
         image={selectedItem?.image}
       />
