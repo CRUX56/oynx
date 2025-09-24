@@ -34,17 +34,77 @@
       {
         "image": "portfolio-1.jpg",
         "name": "theStars Above",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia. "
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia. ",
+        "client": "a24",
+        "category": ["branding", "design"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       },
       {
         "image": "portfolio-2.jpg",
         "name": "PlayStation VaporWare",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia.",
+        "client": "Sony",
+        "category": ["branding", "marketing", "design"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       },
       {
         "image": "portfolio-3.jpg",
         "name": "e36 M3 BMW Study",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia.",
+        "client": "RTR Vehicle Study",
+        "category": ["branding", "design", "marketing"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       }
     ]
   },

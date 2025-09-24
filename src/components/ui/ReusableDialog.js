@@ -31,13 +31,31 @@ const ReusableDialog = ({ open, onClose, title, content, image }) => {
       </DialogTitle>
       <DialogContent>
         {/* Map through images that are passed via props here */}
-        {image && (
+        {image && !Array.isArray(image) && (
           <img
             src={image}
             alt={title}
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              marginBottom: "16px",
+            }}
           />
         )}
+
+        {Array.isArray(image) &&
+          image.map((img, index) => (
+            <img
+              key={index}
+              src={img.src}
+              alt={img.alt || title}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                marginBottom: "16px",
+              }}
+            />
+          ))}
         <p>{content}</p>
         {/* Add More Conent here as needed */}
       </DialogContent>

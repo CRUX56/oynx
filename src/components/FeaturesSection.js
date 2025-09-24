@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import content from "../content/content.json";
 import { Grid, Box } from "@mui/material";
 import Card from "./ui/Card";
 import ReusableDialog from "./ui/ReusableDialog";
 
 export default function FeaturesSection({ features }) {
-  const item = content.portfolio?.items || [];
   const [selectedItem, setSelectedItem] = useState(null);
 
   return (
