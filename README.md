@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Branch: theme-responsive
+
+This branch is dedicated to implementing theme and responsive design features.
+
 ## Available Scripts
 
 In the project directory, you can run:
