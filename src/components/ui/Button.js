@@ -1,17 +1,6 @@
-import React from "react";
-import { Button as MuiButton } from "@mui/material";
+import * as React from "react";
+import Button from "@mui/material/Button";
 
-const Button = ({
-  text,
-  onClick,
-  variant = "contained",
-  color = "primary",
-}) => {
-  return (
-    <MuiButton variant={variant} color={color} onClick={onClick}>
-      {text}
-    </MuiButton>
-  );
-};
-
-export default Button;
+export default function CustomButton() {
+  return <Button variant="contained">Hello</Button>;
+}

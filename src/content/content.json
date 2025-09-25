@@ -1,26 +1,31 @@
 {
   "hero": {
-    "title": "Welcome to Our Platform",
+    "title": "Onyx®",
     "subtitle": "Build your future with us.",
     "buttonText": "Get Started",
     "description": "Discover the latest advancements in artificial intelligence and how they are shaping our world.",
-    "image": "/images/hero.jpg",
+    "image": "/hero-background.jpg",
     "button": {
       "text": "Learn More",
       "link": "/about"
     }
   },
+  "fullWidth": {
+    "title": "what do you want to build today?®"
+  },
   "about": {
-    "title": "About Us",
-    "description": "We are a leading company in our industry, committed to providing the best services to our clients. Our team of experts is dedicated to ensuring your success."
+    "title": "About Onyx Studios",
+    "description": "We are a leading company in our industry, committed to providing the best services to our clients. Our team of experts is dedicated to ensuring your success.",
+    "image": "/abstract-portfolio-item.jpg"
   },
   "services": {
     "title": "Our Services",
-    "description": "We offer a variety of services to meet your needs.",
-    "list": [
+    "description": "We offer a variety of services to meet your needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "items": [
       { "title": "Service One", "content": "Details about service one." },
       { "title": "Service Two", "content": "Details about service two." },
-      { "title": "Service Three", "content": "Details about service three." }
+      { "title": "Service Three", "content": "Details about service three." },
+      { "title": "Service Four", "content": "Details about service four." }
     ]
   },
   "features": {
@@ -28,16 +33,145 @@
     "description": "Explore the unique features that set us apart.",
     "items": [
       {
-        "name": "Feature One",
-        "description": "Description of feature one."
+        "image": "portfolio-1.jpg",
+        "name": "theStars Above",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia. ",
+        "client": "a24",
+        "category": ["branding", "design"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       },
       {
-        "name": "Feature Two",
-        "description": "Description of feature two."
+        "image": "portfolio-2.jpg",
+        "name": "PlayStation VaporWare",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia.",
+        "client": "Sony",
+        "category": ["branding", "marketing", "design"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       },
       {
-        "name": "Feature Three",
-        "description": "Description of feature three."
+        "image": "portfolio-3.jpg",
+        "name": "e36 M3 BMW Study",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia.",
+        "client": "RTR Vehicle Study",
+        "category": ["branding", "design", "marketing"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
+      }
+    ]
+  },
+  "selectedWorks": {
+    "title": "Our Features",
+    "description": "Explore the unique features that set us apart.",
+    "items": [
+      {
+        "image": "gtr-portfolio-image.jpg",
+        "name": "GODZILLA Project",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia. ",
+        "client": "a24",
+        "category": ["branding", "design"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
+      },
+      {
+        "image": "abstract-portfolio-item.jpg",
+        "name": "oil + water",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia.",
+        "client": "Sony",
+        "category": ["branding", "marketing", "design"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "abstract-portfolio-item-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "abstract-portfolio-item-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          }
+        ]
+      },
+      {
+        "image": "viper-portfolio-image.jpg",
+        "name": "the Viper Project",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare accumsan euismod. Cras tempus sapien et dui lobortis ultrices. Cras quis elit eget lorem mattis lacinia.",
+        "client": "RTR Vehicle Study",
+        "category": ["branding", "design", "marketing"],
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum hendrerit est, sit amet pulvinar eros posuere dictum. In ex elit, congue vel arcu id, mattis cursus magna. Nam nec libero sollicitudin, faucibus mi non, hendrerit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta pharetra tincidunt. Duis feugiat neque in diam dapibus tempor. Vestibulum sed arcu libero. Donec at leo volutpat, tempor massa ac, rutrum mauris. Cras eleifend interdum arcu, id congue lectus ultricies vel. Sed pretium mauris sem, non congue eros venenatis id. Donec semper urna a lectus iaculis, vel facilisis eros vestibulum. Aenean venenatis euismod metus, vitae tincidunt ante egestas at. Suspendisse feugiat placerat risus.",
+        "portfolioImages": [
+          {
+            "src": "viper-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          }
+        ]
       }
     ]
   },
@@ -47,15 +181,135 @@
     "items": [
       {
         "name": "Feature One",
-        "description": "Description of feature one."
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       },
       {
-        "name": "Feature Two",
-        "description": "Description of feature two."
+        "name": "Feature 2",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       },
       {
-        "name": "Feature Three",
-        "description": "Description of feature three."
+        "name": "Feature 3",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
+      },
+      {
+        "name": "Feature 4",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
+      },
+      {
+        "name": "Feature 5",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
+      },
+      {
+        "name": "Feature 6",
+        "description": "Description of feature one.",
+        "image": "gtr-portfolio-image.jpg",
+        "portfolioImage": [
+          {
+            "src": "gtr-portfolio-image-2.jpg",
+            "alt": "Portfolio Item 2",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-3.jpg",
+            "alt": "Portfolio Item 3",
+            "description": "Description of feature one."
+          },
+          {
+            "src": "gtr-portfolio-image-4.jpg",
+            "alt": "Portfolio Item 4",
+            "description": "Description of feature one."
+          }
+        ]
       }
     ]
   },
@@ -77,6 +331,20 @@
       }
     ]
   },
+  "parallax": {
+    "sections": [
+      {
+        "image": "/images/parallax1.jpg",
+        "title": "Innovate with Us",
+        "content": "Join us in shaping the future of technology."
+      },
+      {
+        "image": "/images/parallax2.jpg",
+        "title": "Our Vision",
+        "content": "We aim to revolutionize industries with cutting-edge solutions."
+      }
+    ]
+  },
   "contactForm": {
     "title": "Contact Us",
     "fields": [
@@ -86,9 +354,13 @@
     ],
     "buttonText": "Submit"
   },
+  "footerCTA": {
+    "title": "how can we help you today?®"
+  },
   "footer": {
-    "logo": "BusinessName",
-    "blurb": "Welcome to BusinessName, your one-stop solution for all your needs. We are committed to delivering the best services to our customers.",
+    "logo": "Onyx® Studios",
+    "blurb": "Whether you’re building a brand, designing a product, or simply want to explore an idea, we’d love to hear from you.",
+    "email": "hello@onyx.com",
     "navigation": [
       { "label": "Home", "link": "#hero" },
       { "label": "About", "link": "#about" },
@@ -96,6 +368,6 @@
       { "label": "Portfolio", "link": "#portfolio" },
       { "label": "Contact", "link": "#contact" }
     ],
-    "copyright": "© 2023 BusinessName. All rights reserved."
+    "copyright": "© 2025 theCRUXCREATIVE. All rights reserved."
   }
 }
