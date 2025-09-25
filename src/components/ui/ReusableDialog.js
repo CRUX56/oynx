@@ -115,7 +115,7 @@ const ReusableDialog = ({
               />
             ))}
         <p>{content}</p>
-        {/* Add More Conent here as needed */}
+        {/* Add More Content here as needed */}
       </DialogContent>
     </Dialog>
   );

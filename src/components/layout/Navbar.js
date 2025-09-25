@@ -17,8 +17,8 @@ export default function Navbar({ options, logo, navigation }) {
               src={logo}
               alt={options.logo.alt}
               style={{
-                width: options?.width,
-                height: options?.height,
+                width: options?.logo?.width,
+                height: options?.logo?.height,
                 marginRight: "8px",
               }}
             />

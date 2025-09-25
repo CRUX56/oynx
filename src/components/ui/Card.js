@@ -10,13 +10,6 @@ import AddIcon from "@mui/icons-material/Add";
 
 const Card = ({ title, content, icon: Icon, image, onClick }) => {
   const theme = useTheme();
-  // No changes needed here; the openPortfolioPopup function already calls onClick,
-  // which is passed from PortfolioSection.js and sets the selected item.
-  const openPortfolioPopup = () => {
-    if (onClick) {
-      onClick();
-    }
-  };
 
   return (
     <MuiCard
