@@ -9,12 +9,18 @@ export default function HeroSection({ image, title, subtitle }) {
       sx={{
         ...theme.sections.hero,
         backgroundImage: `url(${image})`,
+        padding: { xs: "24px", sm: "48px", md: "50px" },
+        height: { xs: "auto", md: "65vh" },
+        minHeight: "400px",
+        textAlign: { xs: "center", md: "left" },
+        alignItems: { xs: "center", md: "flex-start" },
+        justifyContent: { xs: "center", md: "flex-end" },
       }}
     >
-      <Typography variant="h1" align="left">
+      <Typography variant="h1">
         {title}
       </Typography>
-      <Typography variant="h2" align="left">
+      <Typography variant="h2">
         {subtitle}
       </Typography>
     </Box>

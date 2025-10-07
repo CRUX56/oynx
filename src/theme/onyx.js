@@ -1,6 +1,17 @@
 import { createTheme } from "@mui/material/styles";
 
+const breakpoints = {
+  values: {
+    xs: 320,
+    sm: 600,
+    md: 900,
+    lg: 1200,
+    xl: 1536,
+  },
+};
+
 const onyxTheme = createTheme({
+  breakpoints,
   generalLayout: {
     TextAlign: ["center", "left", "right"],
     alignItems: ["center", "flex-start", "flex-end"],
@@ -37,18 +48,30 @@ const onyxTheme = createTheme({
     fontFamily: '"Inter", "Inter Placeholder", "Arial", sans-serif',
     fontWeightBold: 700,
     h1: {
-      fontSize: "248px",
+      fontSize: "4rem",
       fontWeight: "800",
-      lineHeight: 1.235,
+      lineHeight: 1,
       letterSpacing: "-0.07em",
       textTransform: "Capitalize",
+      [`@media (min-width:${breakpoints.values.sm}px)`]: {
+        fontSize: "8rem",
+      },
+      [`@media (min-width:${breakpoints.values.md}px)`]: {
+        fontSize: "12rem",
+      },
+      [`@media (min-width:${breakpoints.values.lg}px)`]: {
+        fontSize: "248px",
+      },
     },
     h2: {
-      fontSize: "40px",
+      fontSize: "2rem",
       fontWeight: "400",
       fontFamily: "Inter, sans-serif",
       textTransform: "lowercase",
       lineHeight: 1.334,
+      [`@media (min-width:${breakpoints.values.md}px)`]: {
+        fontSize: "40px",
+      },
     },
     h3: {
       fontWeight: 500,
@@ -57,8 +80,11 @@ const onyxTheme = createTheme({
     },
     h4: {
       fontWeight: 700,
-      fontSize: "36px",
+      fontSize: "1.5rem",
       lineHeight: 1.6,
+      [`@media (min-width:${breakpoints.values.md}px)`]: {
+        fontSize: "36px",
+      },
     },
     h5: {
       fontWeight: 500,
@@ -203,19 +229,28 @@ const onyxTheme = createTheme({
       padding: "20px 0",
     },
     footer: {
-      px: 12,
+      px: { xs: 2, sm: 6, md: 12 },
       pt: 10,
       pb: 4,
       mb: 2,
       backgroundColor: "#121212",
       color: "#FFFFFF",
       displayLogo: {
-        fontSize: "278.41px",
+        fontSize: "5rem",
         fontWeight: "600",
         textTransform: "Capitalize",
         letterSpacing: "-0.08em",
         lineHeight: "0.9em",
         fontFamily: "Inter, sans-serif",
+        [`@media (min-width:${breakpoints.values.sm}px)`]: {
+          fontSize: "8rem",
+        },
+        [`@media (min-width:${breakpoints.values.md}px)`]: {
+          fontSize: "12rem",
+        },
+        [`@media (min-width:${breakpoints.values.lg}px)`]: {
+          fontSize: "278.41px",
+        },
       },
     },
   },
